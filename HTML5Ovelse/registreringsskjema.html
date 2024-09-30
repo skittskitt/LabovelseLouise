@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside for et nettsted</title>
+</head>
+<body>
+    <header>
+        <h1>Forsiden</h1>
+    </header>
+    <nav>
+        <p><a href="index.html">Hjem</a></p>
+        <p><a href="validering.html">Valideringsoppgave</a></p>
+        <p><a href="#">Nettside mal</a></p>
+        <p><a href="contact.html">Kontakt oss</a></p>
+    </nav>
+    <main>
+        <section>
+            <form method="post">
+                <label for="navn"> Navn:</label>
+                    <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}"
+                    name="navn" placeholder="Navn" id="navn"
+                    maxlength="45" required>
+                </label>
+                <label>
+                    E-post: 
+                    <input type="email" name="email" placeholder="eksempel@hiof.no" 
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                </label>
+                <label>
+                    Passord:
+                    <input type="password" id="pwd" name="pwd" placeholder="passord"
+                    minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                </label>
+                <label>
+                    Alder:
+                    <input type="number" id="alder" name="alder" min="18" max="99" required>
+                </label>
+                <label>
+                    Telefon:
+                    <input type="text" name="telefon" placeholder="Ditt nummer" id="telefon" 
+                    pattern="[0-9]{8,12}" minlength="8" maxlength="12"  required>
+                </label>
+                <label>
+                    Dato:
+                    <input type="date" id="fødtselsdag" name="Fødtselsdag"
+                    max="2023-12-31" required>
+                </label>
+                <label>
+                    Kjønn:
+                    Mann <input type="radio" name="valg">
+                </label>
+                <label>
+                    Kvinne <input type="radio" name="valg">
+                </label>
+                <label>
+                    Annet <input type="radio" name="valg">
+                </label>
+                Favoritt mat: 
+                <select name="Land">
+                    <option value="Norge">Norge</option>
+                    <option value="Sverige">Sverige</option>
+                    <option value="Danmark">Danmark</option>
+                </select>
+                <label>
+                <input type="checkbox" id="personvern" name="perosnvern" value="Personvern" required> Personvern: 
+                </label>
+                <input type="submit" value="Send inn">
+            </form>
+            <article>
+                <h2>Validering</h2>
+                <p>text</p>
+            </article>
+            <article>
+                <h2>Kontakt oss</h2>
+                <p>text</p>
+            </article>
+            <article>
+                <h2>Studieplan</h2  >
+                <p>text</p>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <section>
+        <h3>Fem artikkler om sematisk HTML</h3>
+        <ul>
+            <li><a href="#">Artikkel 1</a></li>
+            <li><a href="#">Artikkel 2</a></li>
+            <li><a href="#">Artikkel 3</a></li>
+            <li><a href="#">Artikkel 4</a></li>
+            <li><a href="#">Artikkel 5</a></li>
+        </ul>
+        </section>
+        <h3>Her er Google-søkeresultater om HTML5</h3>
+            <a href="#">Google resultater</a>
+        <section>
+
+        </section>
+    </aside>
+    <footer>Louise Østensen louiseos@hiof.no</footer>
+</body>
+</html>
